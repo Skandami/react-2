@@ -1,0 +1,80 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+ 
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
+  place-content: center;
+
+}
+
+h1 {
+ color: white;
+  font-size: 3em;
+  line-height: 1.5;
+}
+
+
+.superheroes {
+  max-width: 1200 px;
+  margin: auto;
+  padding: 60px;
+}
+
+.item-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+}
+
+.item-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.item-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.item-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.item-card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.item-card p:last-child {
+  margin-bottom: 0;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+ color:#1a1a1a;
+  background-color: #1a1a1a;
+  }
+
+
+}
