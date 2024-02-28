@@ -1,23 +1,15 @@
-import React from 'react';
-import heroes from './components/data/data.json';
 
-const Superheroes= () => {
-  
+import CardHero from './components/card/Card';
+import heroes from './data/data.json';
+import Header from './components/header/Header';
+
+const Superheroes = () => {
   return (
-    <div className="superheroes">
-      <h1>Superheroes</h1>
+    <div>
+      <Header />
       <div className="item-cards">
         {heroes.map((item) => (
-          <div key={item.id} className="item-card">
-           
-                <h2>{item.name}</h2>
-                <p>{item.universe}</p>
-                <p>{item.alterego}</p>
-                <p>{item.occupation}</p>
-            <p>{item.friends}</p>
-                <p>{item.superpowers}</p>
-                <img src={item.url} />
-          </div>
+          <CardHero key={item.id} item={item} />
         ))}
       </div>
     </div>
